@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FCF8EC;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    margin: 10px 0;
+}
+
+/* Media Query for Responsive Design */
+
+@media (max-width: 400px) {
+    nav .links ul {
+        display: none;
+    }
+
+    nav .links ul li {
+        display: block;
+    }
+
+    nav .links ul li a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #fff;
+    }
+
+    nav .links ul ul {
+        position: static;
+        background-color: transparent;
+        display: block;
+    }
+
+    nav .searchBox {
+        margin-top: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav .links {
+        margin-top: 20px;
+    }
+
+    nav .links ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav .links ul li a {
+        padding: 8px;
+    }
+
+    nav .links ul li a:hover {
+        background-color: #555;
+    }
+
+    nav .links ul li .arrow-icon {
+        display: none;
+    }
+
+    nav .searchBox {
+        margin-top: 20px;
+        align-self: stretch;
+    }
+
+    nav .searchBox input[type="text"] {
+        width: 100%;
+    }
+
+    nav .searchBox button {
+        margin-top: 10px;
+    }
+
+    .card .image {
+        position: relative;
+    }
+
+    .card .image span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #f5f5f5;
+        padding: 8px;
+        border-radius: 50%;
+        font-size: 24px;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .card .image span:hover {
+        background-color: #e5e5e5;
+    }
+
+    .card .image span:first-child {
+        left: 0;
+    }
+
+    .card .image span:last-child {
+        right: 0;
+    }
+}

@@ -1,0 +1,53 @@
+/* Footer Styles */
+
+footer {
+    background-color: #456268;
+    padding: 20px;
+    text-align: center;
+}
+
+#companyDescription {
+    margin-bottom: 20px;
+}
+
+.companyName h3 {
+    font-size: 20px;
+    color: #FCF8EC;
+    margin-bottom: 10px;
+}
+
+#description {
+    font-size: 14px;
+    color: #FCF8EC;
+}
+
+.Contact {
+    margin-bottom: 20px;
+}
+
+.contactInfo h3 {
+    font-size: 18px;
+    color: #FCF8EC;
+    margin-bottom: 10px;
+}
+
+#email,
+#phonenum,
+#address {
+    font-size: 14px;
+    color: #FCF8EC;
+    margin-bottom: 5px;
+}
+
+
+/* Media Query for Responsive Design */
+
+@media (max-width: 768px) {
+    .companyName h3 {
+        font-size: 18px;
+    }
+
+    .contactInfo h3 {
+        font-size: 16px;
+    }
+}

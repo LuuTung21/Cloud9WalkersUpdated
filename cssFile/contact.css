@@ -1,0 +1,62 @@
+body {
+    background-color: #FCF8EC;
+}
+
+.contactCover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.contact {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+}
+
+.contactForm {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact img {
+    width: 50%;
+    height: 50%;
+}
+
+.flashMessage {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.flashMessage.show {
+    opacity: 1;
+}
+
+.flashMessage .message {
+    font-size: 14px;
+}
